@@ -1,4 +1,4 @@
-    import Activity from "../models/Activity.js";
+import Activity from "../models/Activity.js";
 const getOneActivity = async(req,res)=>{
     const {_id} = req.query
     //console.log(req.query)

@@ -10,7 +10,8 @@ const activityTemplate={
 }
 
 const CreateActivity = () => {
-  const navigate = useNavigate();
+
+  const navigate = useNavigate(); // 跳轉頁面
   const [act, setAct] = useState(activityTemplate);
 
   const handleInput=(e)=>{ 

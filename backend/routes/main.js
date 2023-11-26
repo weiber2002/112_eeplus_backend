@@ -5,13 +5,11 @@ import express from "express"
  import getOneActivity from "./getOneActivity.js"
  import Delete from "./delete.js"
  
- router.post("/add", addActivity)  //edit 跟 create都是/都是/add
+ // These lines define routes and associate them with specific route handler functions
+ router.post("/add", addActivity)  //both edit and create use add function 
  router.get("/all",getAllActivity)
- router.get("/",getOneActivity)
+ router.get("/",getOneActivity)  // get specific activity
  router.delete("/delete",Delete)
 
  export default router
 
-//  let a,b...
-//  export {a,b} export 特定變數出去
-// import {a,b} from ./../main.js

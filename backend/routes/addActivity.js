@@ -3,7 +3,8 @@ import Activity from "../models/Activity.js"
 const addActivity = async(req,res)=>{
      
     const {title,description,date,address,_id} = req.body.data //前端發出add api時，順便把名為data的資料傳過來   instance.post('/add',{data:act})
-
+    console.log(req.body.data)
+    
     if(_id){
         await Activity.findOneAndUpdate({"_id":_id},{_id,title,description,date,address}).catch((err)=>{console.log(err)})
         res.send("Activity updated")

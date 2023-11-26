@@ -11,7 +11,8 @@ function App() {
           <Navbar/> 
           <br />
           <Routes>
-            <Route path='/' element = {<ListActivity/>} />
+            {/* actual  relative URL  */}
+            <Route path='/' element = {<ListActivity/>} /> 
             <Route path = '/create_activity' element ={<CreateActivity/>} />
             <Route path = '/edit/:id' element ={<EditActivity/>} /> 
           </Routes>
