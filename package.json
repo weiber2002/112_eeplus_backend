@@ -1,0 +1,15 @@
+{
+    "name": "week6",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "start": "cd frontend && yarn start",
+      "server": "cd backend && yarn server"
+    },
+    "dependencies": {
+      "create-react-app": "^5.0.1",
+      "global": "^4.4.0",
+      "mongodb": "^6.3.0"
+    }
+  }  
